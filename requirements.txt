@@ -1,0 +1,9 @@
+exif
+Pillow == 9.1.0
+Flask == 2.1.2
+numpy == 1.22.3
+icrawler == 0.6.6
+random_word == 1.0.7
+pyyaml == 6.0
+flask_mysql_connector
+gunicorn == 20.1.0
