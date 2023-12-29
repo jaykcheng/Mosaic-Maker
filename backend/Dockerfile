@@ -1,11 +1,11 @@
 # Use the official Python image as the base image
-FROM python:3.8-slim
+FROM python:3.11.3
 
 # Set the working directory
 WORKDIR /app
 
 # Copy the requirements file into the container
-COPY requirements.txt .
+COPY backend/requirements.txt /app
 
 # Install the required Python packages
 RUN pip install -r requirements.txt
