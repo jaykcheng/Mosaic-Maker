@@ -5,7 +5,7 @@ FROM python:3.11.3
 WORKDIR /app
 
 # Copy the requirements file into the container
-COPY backend/requirements.txt /app
+COPY backend/. /app
 
 # Install the required Python packages
 RUN pip install -r requirements.txt
