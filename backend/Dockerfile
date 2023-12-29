@@ -4,11 +4,14 @@ FROM python:3.11.3
 # Set the working directory
 WORKDIR /app
 
+# Enter virtual environment
+RUN python3 -m venv venv
+
 # Copy the requirements file into the container
 COPY backend/. /app
 
 # Install the required Python packages
-RUN pip install -r requirements.txt
+RUN . /venv/bin/activate && pip install -r requirements.txt
 
 # Copy the rest of the application code into the container
 COPY . .
